@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="rosserial_python" name="serial_node" type="serial_node.py" output="screen" args="/dev/ttyUSB0" />
+
+  <node pkg="torch_control" name="torch_control" type="torch_control" output="screen"/>
+
+</launch>
